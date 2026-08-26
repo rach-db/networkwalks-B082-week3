@@ -126,13 +126,13 @@ Password-Protected PDF
           ↓
   NetworkWalks Hash Calculator
           ↓
-    Extract PDF Hash
+   Extract PDF Hash
           ↓
-     NetworkWalks Password Cracker
+NetworkWalks Password Cracker
           ↓
-  Start Attack
+   Start Attack
           ↓
-   Recover Password
+  Recover Password
           ↓
       Open PDF
 ```
