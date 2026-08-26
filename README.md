@@ -19,11 +19,11 @@ The main idea was to extract the password hash from the PDF, load the hash into 
 
 ## Tools Used
 
--John the Ripper (JTR)
--Johnny GUI
--Notepad
--PDF hash extraction tool
--Password-protected PDF
+- John the Ripper (JTR)
+- Johnny GUI
+- Notepad
+- PDF hash extraction tool
+- Password-protected PDF
 
 ## What I Did
 ### 1. Set Up John the Ripper
@@ -142,14 +142,14 @@ This week's practicals helped me understand password cracking from a more hands-
 
 Some of the things I learned were:
 
--How password-protected files can be targeted for password recovery.
--How a protected PDF can produce a hash that can be used by password-cracking tools.
--How John the Ripper works with password hashes.
--How Johnny provides a graphical interface for JTR.
--How dictionary-based password attacks work.
--How password complexity affects the time required to recover a password.
--Why weak and predictable passwords are easier to compromise.
--The importance of using strong and unique passwords.
+- How password-protected files can be targeted for password recovery.
+- How a protected PDF can produce a hash that can be used by password-cracking tools.
+- How John the Ripper works with password hashes.
+- How Johnny provides a graphical interface for JTR.
+- How dictionary-based password attacks work.
+- How password complexity affects the time required to recover a password.
+- Why weak and predictable passwords are easier to compromise.
+- The importance of using strong and unique passwords.
 
 Working through both methods also helped me see that password cracking does not always require the same tools. The first task used JTR locally, while the second used browser-based NetworkWalks tools.
 
