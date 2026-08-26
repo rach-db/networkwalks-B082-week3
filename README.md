@@ -7,16 +7,14 @@ This is my **Week 3 project** from the **NetworkWalks Cybersecurity & Ethical Ha
 For this task, I worked with **John the Ripper (JTR)** and **Johnny GUI** to understand how password recovery works. The practical involved a password-protected PDF, extracting its hash, and then using JTR to recover the password.
 
 I did this in a controlled lab environment for learning and cybersecurity practice.
----
 
 ## Tools Used
 
-* John the Ripper (JTR)
-* Johnny GUI
-* Windows
-* Notepad
-* PDF hash extraction tool
----
+- John the Ripper (JTR)
+- Johnny GUI
+- Windows
+- Notepad
+- PDF hash extraction tool
 
 ## What I Did
 
@@ -30,7 +28,11 @@ After installing Johnny, I configured it to use the `john.exe` file from the Joh
 
 I used the provided password-protected PDF and extracted its hash using a PDF hash extraction tool.
 
-The extracted hash was then copied into a text file called `hash1.txt`.
+The extracted hash was then copied into a text file called:
+
+```text
+hash1.txt
+```
 
 ### 3. Loaded the hash into Johnny
 
@@ -47,7 +49,6 @@ The time taken for password recovery can depend on things like the password comp
 Once the process finished, Johnny displayed the recovered password.
 
 I then used that password to open the protected PDF and verify that it worked.
----
 
 ## Workflow
 
@@ -56,14 +57,26 @@ Password-Protected PDF
           ↓
    Extract PDF Hash
           ↓
-  Save as hash1.txt
+     Save as hash1.txt
           ↓
-Load Hash into Johnny
+   Load Hash into Johnny
           ↓
-Start John the Ripper
+ Start John the Ripper
           ↓
-   Recover Password
+    Recover Password
           ↓
-Open the Protected PDF
+  Open the Protected PDF
 ```
----
+
+## What I Learned
+
+This task helped me understand the practical side of password cracking instead of just learning the theory.
+
+Some of the things I learned were:
+
+- How password-protected files can be tested using password recovery tools.
+- How a password hash can be extracted from a protected PDF.
+- How John the Ripper works with password hashes.
+- How Johnny provides a simpler graphical interface for JTR.
+- How password complexity affects the difficulty of recovering a password.
+- Why strong and unique passwords are important.
