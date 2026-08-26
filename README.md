@@ -2,56 +2,109 @@
 
 ## About the Project
 
-This is my **Week 3 project** from the **NetworkWalks Cybersecurity & Ethical Hacking Internship**.
+This week's tasks focused on understanding password cracking, password hashes, and password security through two practical exercises.
 
-For this task, I worked with **John the Ripper (JTR)** and **Johnny GUI** to understand how password recovery works. The practical involved a password-protected PDF, extracting its hash, and then using JTR to recover the password.
+Project Module 1: Password Cracking with John the Ripper (JTR)
+Project Module 2: Password Cracking with NetworkWalks Tools
 
-I did this in a controlled lab environment for learning and cybersecurity practice.
+The practicals were performed in a controlled lab environment using a password-protected PDF.
+
+## Project Module 1 – Password Cracking with JTR
+
+# Overview
+
+In the first task, I used John the Ripper (JTR) and Johnny GUI to recover the password of a protected PDF.
+
+The main idea was to extract the password hash from the PDF, load the hash into Johnny, and use John the Ripper to perform password recovery.
 
 ## Tools Used
 
-- John the Ripper (JTR)
-- Johnny GUI
-- Windows
-- Notepad
-- PDF hash extraction tool
+-John the Ripper (JTR)
+-Johnny GUI
+-Notepad
+-PDF hash extraction tool
+-Password-protected PDF
 
 ## What I Did
+### 1. Set Up John the Ripper
 
-### 1. Set up John the Ripper and Johnny
+I downloaded and set up John the Ripper on my Windows system.
 
-I downloaded John the Ripper and installed the Johnny GUI on my Windows system.
+### 2. Configured Johnny
 
-After installing Johnny, I configured it to use the `john.exe` file from the John the Ripper `run` folder.
+I installed Johnny, the graphical interface for John the Ripper, and configured it to use the john.exe file from the JTR run folder.
 
-### 2. Extracted the PDF hash
+### 3. Extracted the PDF Hash
 
-I used the provided password-protected PDF and extracted its hash using a PDF hash extraction tool.
+I used a PDF hash extraction tool to extract the hash from the password-protected PDF.
 
-The extracted hash was then copied into a text file called:
+The hash was then saved in a text file:
 
 ```text
 hash1.txt
 ```
+### 4. Loaded the Hash into Johnny
 
-### 3. Loaded the hash into Johnny
+I opened Johnny and loaded the hash1.txt file using the Open password file option.
 
-I opened Johnny and used the **Open password file** option to load the `hash1.txt` file.
+### 5. Started the Password Recovery
 
-### 4. Started the password recovery
+I started a new attack using John the Ripper and waited for the tool to find the password.
 
-After loading the hash, I started a new attack using John the Ripper.
+The time required can vary depending on the password complexity and the computer's processing power.
 
-The time taken for password recovery can depend on things like the password complexity and the computer's processing power.
+6. Verified the Password
 
-### 5. Recovered the password
+After the password was recovered, I used it to open the protected PDF and confirmed that it worked.
+---
+## Project Module 2 – Password Cracking with NetworkWalks Tools
+# Overview
 
-Once the process finished, Johnny displayed the recovered password.
+In the second task, I used the NetworkWalks Hash Calculator and NetworkWalks Password Cracker to perform the same type of password recovery through a web browser.
 
-I then used that password to open the protected PDF and verify that it worked.
+Unlike the first task, no additional software installation was required.
+
+## Tools Used
+-NetworkWalks Hash Calculator
+-NetworkWalks Password Cracker
+-Web Browser
+-Password-protected PDF
+
+## What I Did
+### 1. Opened the Hash Calculator
+
+I opened the NetworkWalks Hash Calculator in my browser and uploaded the password-protected PDF.
+
+### 2. Extracted the PDF Hash
+
+The tool generated the PDF hash, which started with:
+
+```text
+$pdf$
+```
+
+I copied the complete hash for the next step.
+
+### 3. Opened the Password Cracker
+
+I opened the NetworkWalks Password Cracker and pasted the extracted hash.
+
+### 4. Started the Attack
+
+I started the password-cracking process.
+
+The tool used a dictionary-based approach to try different possible passwords until it found a matching password.
+
+### 5. Recovered the Password
+
+The tool successfully recovered the password.
+
+### 6. Tested the Password
+
+I entered the recovered password into the protected PDF and successfully opened the file.
 
 ## Workflow
-
+# Module 1
 ```text
 Password-Protected PDF
           ↓
@@ -67,16 +120,38 @@ Password-Protected PDF
           ↓
   Open the Protected PDF
 ```
-
+# Module 2
+```text
+Password-Protected PDF
+          ↓
+  NetworkWalks Hash Calculator
+          ↓
+    Extract PDF Hash
+          ↓
+     NetworkWalks Password Cracker
+          ↓
+  Start Attack
+          ↓
+   Recover Password
+          ↓
+      Open PDF
+```
 ## What I Learned
 
-This task helped me understand the practical side of password cracking instead of just learning the theory.
+This week's practicals helped me understand password cracking from a more hands-on perspective.
 
 Some of the things I learned were:
 
-- How password-protected files can be tested using password recovery tools.
-- How a password hash can be extracted from a protected PDF.
-- How John the Ripper works with password hashes.
-- How Johnny provides a simpler graphical interface for JTR.
-- How password complexity affects the difficulty of recovering a password.
-- Why strong and unique passwords are important.
+-How password-protected files can be targeted for password recovery.
+-How a protected PDF can produce a hash that can be used by password-cracking tools.
+-How John the Ripper works with password hashes.
+-How Johnny provides a graphical interface for JTR.
+-How dictionary-based password attacks work.
+-How password complexity affects the time required to recover a password.
+-Why weak and predictable passwords are easier to compromise.
+-The importance of using strong and unique passwords.
+
+Working through both methods also helped me see that password cracking does not always require the same tools. The first task used JTR locally, while the second used browser-based NetworkWalks tools.
+
+## Author 
+Rachel Debbarma
